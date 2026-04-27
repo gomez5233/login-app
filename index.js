@@ -32,8 +32,14 @@ app.post("/login", (req, res) => {
   );
 });
 
-const PORT = process.env.PORT || 3000;
+app.get("/", (req, res) => {
+  res.send("Backend funcionando");
+});
 
-app.listen(PORT, () => {
+app.get("/test", (req, res) => {
+  res.json({ ok: true });
+});
+
+app.listen(process.env.PORT || 3000, () => {
   console.log("Servidor corriendo");
 });
