@@ -33,7 +33,7 @@ app.post("/login", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.send("Backend funcionando");
+  res.send("Backend funcionando v2");
 });
 
 app.get("/test", (req, res) => {
